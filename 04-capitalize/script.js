@@ -7,8 +7,18 @@
 */
 
 function capitalize(str) {
-    // Напишите код здесь
-}
+    let newStr = '';
+    for (let i = 0; i < str.length; i++) {
+      const element = str[i];
+      if (str[i - 1] === ' ' || str[i - 1] === undefined) {
+        newStr += element.toUpperCase();
+      } else {
+        newStr += element;
+      }
+    }
+  
+    return newStr;
+  }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

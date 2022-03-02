@@ -7,8 +7,11 @@
  * 
 */
 
-function uniq(arr) {
-    // Напишите код здесь
+function uniq (arr) {
+    const newArr = arr.filter((item, index, array) => {
+    return array.indexOf(item) === index
+    });
+    return newArr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

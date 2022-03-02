@@ -7,7 +7,21 @@
 */
 
 function primes(num) {
-    // Напишите код здесь
+    const mas=[]
+    for (i = 2; i <= num; i++){
+
+         if (i === 2 || i === 3){
+            mas.push(i)
+        }
+        else if (i % 2 !== 0 && i % 3 !== 0){
+        if (Math.sqrt(i) - Math.floor(Math.sqrt(i)) > 0)
+          mas.push(i) 
+            
+        }
+    
+    }
+    return mas
+    console.log(mas)
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

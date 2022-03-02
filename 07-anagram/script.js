@@ -9,7 +9,17 @@
 */
 
 function anagram(str1, str2) {
-    // Напишите код здесь
+    if (str1.toUpperCase() === str2.toUpperCase()) {
+        return false    
+    } else {    
+        const arrayFromString1 = str1.toLowerCase().split('').sort().join('')
+        const arrayFromString2 = str2.toLowerCase().split('').sort().join('')    
+        if (arrayFromString1 === arrayFromString2) {
+        return true 
+        } else {
+        return false
+        }
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

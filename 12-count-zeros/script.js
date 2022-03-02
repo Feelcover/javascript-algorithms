@@ -7,8 +7,21 @@
 */
 
 function countZeros(n) {
-    // Напишите код здесь
-}
+    let sum = 0;
+       for (i = 1; i <= n; i++){
+           const str=String(i);
+            const mas=str.split('')
+            let b=0;
+                for (a = 0;a <= (mas.length - 1); a++){
+                    if(mas[a].includes(0) === true){
+                    b = b + 1;
+                    }
+                }
+            sum = sum + b; 
+           
+       }
+       return sum
+    }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
